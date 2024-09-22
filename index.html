@@ -26,6 +26,10 @@
     />
     <meta property="og:url" content="https://ninacarducci.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="https://ninacarducci.github.io/" />
+    <meta name="twitter:creator" content="nina carducci" />
+    <meta name="twitter:image" content="https://ninacarducci.github.io/assets/images/nina.png" />
 
     <title>Nina Carducci - Photographe à Bordeaux</title>
     <link
@@ -46,7 +50,28 @@
       defer
     ></script>
   </head>
-
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nina Carducci",
+      "jobTitle": "Photographe professionnelle",
+      "description": "Nina Carducci, photographe professionnelle, vous propose ses services pour capturer vos moments les plus précieux et garder un souvenir impérissable.",
+      "url": "https://ninacarducci.github.io/assets/images/nina.png",
+      "image": "https://ninacarducci.github.io/assets/images/nina.png",
+      "sameAs": [
+        "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "68 avenue Alsace-Lorraine",
+        "addressLocality": "Bordeaux",
+        "postalCode": "33200",
+        "addressCountry": "FR"
+      },
+      "telephone": "0556677889"
+    }
+  </script>
   <body>
     <header>
       <div class="top-header">
@@ -110,7 +135,6 @@
                 src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash1.jpg"
                 class="d-block w-100"
                 alt="Un homme qui marche sur le trottoir"
-                loading="lazy"
               />
             </div>
             <div class="carousel-item">
@@ -160,16 +184,16 @@
           />
         </div>
         <div id="about-me">
-          <h2 class="about-me__title">À propos de moi</h2>
-          <p>
-            Saisir un moment, une émotion, une situation, un endroit, une
-            lumière et les rendre immortels, voilà ce qui me fait vibrer.
-          </p>
-          <p>
-            Je vous propose de capturer ces merveilleux moments à travers mon
-            approche, afin que vous puissiez y puiser de l'amour et du bonheur à
-            chaque fois que vous les regarderez.
-          </p>
+          <h2 class="about-me__title">A propos de moi</h2>
+          <p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j'y étais
+            prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels,
+            voilà ce qui me fait vibrer.</p>
+          <p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n'avons qu'une envie : le
+            figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le
+            partager au plus grand nombre.
+            C'est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma
+            technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l'amour, du bonheur, de la
+            tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
         </div>
       </section>
 
@@ -307,7 +331,6 @@
     src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous"
-    defer
   ></script>
   <script src="./assets/maugallery.js" defer></script>
   <script src="./assets/scripts.js" defer></script>
