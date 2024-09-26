@@ -7,10 +7,6 @@
       name="description"
       content="Nina Carducci est photographe spécialisée dans la capture de moments précieux à travers des portraits, des mariages, des événements d'entreprise et plus encore."
     />
-    <meta
-      name="keywords"
-      content="photographe, portraits, mariages, événements d'entreprise, galerie photo, retouches photos, photographie, traitement, portfolio, tarifs, édition, Bordeaux"
-    />
     <meta name="author" content="Nina Carducci" />
     <meta
       property="og:title"
@@ -49,29 +45,39 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Studio Nina Carducci",
+        "description": "Studio Nina Carducci propose des services de photographie professionnelle pour capturer vos moments les plus précieux.",
+        "url": "https://ninacarducci.github.io/",
+        "image": "https://ninacarducci.github.io/assets/images/nina.png",
+        "sameAs": [
+          "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "telephone": "0556677889",
+        "openingHours": "Mo-Sa 09:00-18:00",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+33-556-677-889",
+          "contactType": "Customer Service"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Nina Carducci"
+        },
+        "priceRange": "$$"
+      }
+    </script>
   </head>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Nina Carducci",
-      "jobTitle": "Photographe professionnelle",
-      "description": "Nina Carducci, photographe professionnelle, vous propose ses services pour capturer vos moments les plus précieux et garder un souvenir impérissable.",
-      "url": "https://ninacarducci.github.io/assets/images/nina.png",
-      "image": "https://ninacarducci.github.io/assets/images/nina.png",
-      "sameAs": [
-        "https://www.instagram.com/ninacarducci.photo/?hl=fr"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "68 avenue Alsace-Lorraine",
-        "addressLocality": "Bordeaux",
-        "postalCode": "33200",
-        "addressCountry": "FR"
-      },
-      "telephone": "0556677889"
-    }
-  </script>
   <body>
     <header>
       <div class="top-header">
@@ -198,7 +204,7 @@
       </section>
 
       <section id="gallery">
-        <h3 class="title">Portfolio</h3>
+        <h2 class="title">Portfolio</h2>
         <div class="container py-3">
           <div class="gallery" style="display: none">
             <img
@@ -269,7 +275,7 @@
       </section>
 
       <section id="services">
-        <h3 class="title">Mes services</h3>
+        <h2 class="title">Mes services</h2>
         <div class="container">
           <div class="service">
             <div class="service__description">
@@ -296,6 +302,16 @@
               <span>2 AR par photo inclus</span>
             </div>
           </div>
+          <div class="service">
+            <div class="service__description">
+              <h3>Album photos</h3>
+              <p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+            </div>
+            <div class="service__price">
+              <h4>400€ album A4</h4>
+              <span>30 pages recto/verso</span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -304,7 +320,7 @@
       <section id="contact">
         <div class="container">
           <div class="form-container">
-            <h3>Une question ? Une demande de devis ?</h3>
+            <h2>Une question ? Une demande de devis ?</h2>
             <form action="" method="post">
               <label for="nom">Nom</label>
               <input type="text" name="nom" id="nom" />
